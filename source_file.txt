@@ -1,0 +1,32 @@
+basename = Irkutsk
+coordinates = (52.246, 104.203)
+years = [2005]
+months = [4]
+hours = [0]
+altitudes = [215]
+run = 12
+emission_rate = 4780000000
+hours_emission = 1
+method = 0
+
+basename = Angarsk
+coordinates = (52.532, 103.937)
+years = [2005]
+months = [4]
+hours = [0]
+altitudes = [215]
+run = 12
+emission_rate = 11980000000
+hours_emission = 1
+method = 0
+
+basename = Shelehova
+coordinates = (52.184, 104.091)
+years = [2005]
+months = [4]
+hours = [0]
+altitudes = [215]
+run = 12
+emission_rate = 680000000
+hours_emission = 1
+method = 0

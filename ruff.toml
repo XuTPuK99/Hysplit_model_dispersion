@@ -1,0 +1,66 @@
+# Same as Black.
+line-length = 120
+indent-width = 4
+
+# Assume Python 3.9
+target-version = "py312"
+
+exclude = ["alembic"]
+
+[lint]
+select = [
+    "ANN401", # Dynamically typed expressions (typing.Any) are disallowed
+    "F", # Pyflakes https://pypi.org/project/pyflakes/
+    "E", # pycodestyle https://pypi.org/project/pycodestyle/
+    "W", # pycodestyle https://pypi.org/project/pycodestyle/
+    "I", # isort https://pypi.org/project/isort/
+    "N", # pep8-naming https://pypi.org/project/pep8-naming/
+    #    "D",  # pydocstyle https://pypi.org/project/pydocstyle/
+    # "UP",    # pyupgrade https://pypi.org/project/pyupgrade/
+    "ANN",   # flake8-annotations https://pypi.org/project/flake8-annotations/
+    "ASYNC", # flake8-async https://pypi.org/project/flake8-async/
+    "S",     # flake8-bandit https://pypi.org/project/flake8-bandit/
+    "BLE",   # flake8-blind-except https://pypi.org/project/flake8-blind-except/
+    "FBT",   # flake8-boolean-trap https://pypi.org/project/flake8-boolean-trap/
+    "B",     # flake8-bugbear https://pypi.org/project/flake8-bugbear/
+    "A",     # flake8-builtins https://pypi.org/project/flake8-builtins/
+    "COM",   # flake8-commas https://pypi.org/project/flake8-commas/
+    "C4",    # flake8-comprehensions https://pypi.org/project/flake8-comprehensions/
+    "DTZ",   # flake8-datetimez https://pypi.org/project/flake8-datetimez/
+    "EM",    # flake8-errmsg https://pypi.org/project/flake8-errmsg/
+    "ISC",   # flake8-implicit-str-concat https://pypi.org/project/flake8-implicit-str-concat/
+    "LOG",   # flake8-logging https://pypi.org/project/flake8-logging/
+    "G",     # flake8-logging-format https://pypi.org/project/flake8-logging-format/
+    "PIE",   # flake8-pie https://pypi.org/project/flake8-pie/
+    "T20",   # flake8-print https://pypi.org/project/flake8-print/
+    "PT",    # flake8-pytest-style https://pypi.org/project/flake8-pytest-style/
+    "Q",     # flake8-quotes https://pypi.org/project/flake8-quotes/
+    "RSE",   # flake8-raise https://pypi.org/project/flake8-raise/
+    "RET",   # flake8-return https://pypi.org/project/flake8-return/
+    "SLF",   # flake8-self https://pypi.org/project/flake8-self/
+    "SIM",   # flake8-simplify https://pypi.org/project/flake8_simplify/
+    "TID",   # flake8-tidy-imports https://pypi.org/project/flake8-tidy-imports/
+    "TC",    # flake8-type-checking https://pypi.org/project/flake8-type-checking/
+    "ARG",   # flake8-unused-arguments https://pypi.org/project/flake8-unused-arguments/
+    "FAST",
+    #    "DOC",  # pydoclint https://pypi.org/project/pydoclint/
+    "RUF",
+]
+ignore = [
+    "S101",   # Use of assert detected
+    "S608",   # hardcoded-sql-expression
+    "RUF001", # ambiguous-unicode-character-string
+    "RUF002", # ambiguous-unicode-character-docstring
+    "RUF003", # ambiguous-unicode-character-comment
+    "Q000",
+]
+
+[format]
+# Like Black, use double quotes for strings.
+quote-style = "double"
+# Like Black, indent with spaces, rather than tabs.
+indent-style = "space"
+# Like Black, respect magic trailing commas.
+skip-magic-trailing-comma = false
+# Like Black, automatically detect the appropriate line ending.
+line-ending = "auto"
